@@ -3,10 +3,21 @@ import { createRoot } from 'react-dom/client'
 import '@/index.css'
 import App from '@/App.tsx'
 
+import { configureStore } from '@reduxjs/toolkit'
+import { setupListeners } from '@reduxjs/toolkit/query'
+import { Provider } from 'react-redux'
+import { api } from '@/state/api'
+
+export const store = configureStore({
+  reducer: { [api.reducerPath]: api.reducer},
+  middleware: (getDefault) => getDefault().concat(api.middleware),
+})
+
+setupListeners(store.dispatch)
 
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <Provider store={store}>
     <App />
-  </StrictMode>,
+  </Provider>,
 )
