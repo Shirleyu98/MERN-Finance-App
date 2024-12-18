@@ -3,7 +3,7 @@ import FlexBetween from "@/components/FlexBetween";
 import { useGetKpisQuery } from "@/state/api";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 import { useState, useMemo } from "react";
-import regression, { DataPoint } from "regression";
+import regression, { DataPoint } from "regression"
 import {
   ResponsiveContainer,
   LineChart,
