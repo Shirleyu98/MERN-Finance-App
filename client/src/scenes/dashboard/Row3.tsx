@@ -106,6 +106,15 @@ const Row3 = () => {
               color: palette.grey[300],
               border: "none",
             },
+            "& .MuiDataGrid-cell": {
+              borderBottom: `1px solid ${palette.grey[800]} !important`,
+            },
+            "& .MuiDataGrid-columnHeaders": {
+              borderBottom: `1px solid ${palette.grey[800]} !important`,
+            },
+            "& .MuiDataGrid-columnSeparator": {
+              visibility: "hidden",
+            },
           }}
         >
           <DataGrid
@@ -115,21 +124,21 @@ const Row3 = () => {
             rows={productData || []}
             columns={productColumns}
             sx={{
-              "& .MuiDataGrid-cell": {
-                borderColor: palette.grey[800],
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
-              "& .MuiDataGrid-columnSeparator": {
-                visibility: "hidden",
-              },
-              "& .header": {
-                backgroundColor: palette.background.light,
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
-              "& .MuiDataGrid-scrollbarFiller": {
-                backgroundColor: palette.background.light,
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
+            //   "& .MuiDataGrid-cell": {
+            //     borderColor: palette.grey[800],
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
+            //   "& .MuiDataGrid-columnSeparator": {
+            //     visibility: "hidden",
+            //   },
+            //   "& .header": {
+            //     backgroundColor: palette.background.light,
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
+            //   "& .MuiDataGrid-scrollbarFiller": {
+            //     backgroundColor: palette.background.light,
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
               "& ::-webkit-scrollbar": {
                 width: "12px",
               },
@@ -158,6 +167,15 @@ const Row3 = () => {
               color: palette.grey[300],
               border: "none",
             },
+            "& .MuiDataGrid-cell": {
+              borderBottom: `1px solid ${palette.grey[800]} !important`,
+            },
+            "& .MuiDataGrid-columnHeaders": {
+              borderBottom: `1px solid ${palette.grey[800]} !important`,
+            },
+            "& .MuiDataGrid-columnSeparator": {
+              visibility: "hidden",
+            },
           }}
         >
           <DataGrid
@@ -167,21 +185,21 @@ const Row3 = () => {
             rows={transactionData || []}
             columns={transactionColumns}
             sx={{
-              "& .MuiDataGrid-cell": {
-                borderColor: palette.grey[800],
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
-              "& .MuiDataGrid-columnSeparator": {
-                visibility: "hidden",
-              },
-              "& .header": {
-                backgroundColor: palette.background.light,
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
-              "& .MuiDataGrid-scrollbarFiller": {
-                backgroundColor: palette.background.light,
-                borderBottom: `1px solid ${palette.grey[800]} !important`,
-              },
+            //   "& .MuiDataGrid-cell": {
+            //     borderColor: palette.grey[800],
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
+            //   "& .MuiDataGrid-columnSeparator": {
+            //     visibility: "hidden",
+            //   },
+            //   "& .header": {
+            //     backgroundColor: palette.background.light,
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
+            //   "& .MuiDataGrid-scrollbarFiller": {
+            //     backgroundColor: palette.background.light,
+            //     borderBottom: `1px solid ${palette.grey[800]} !important`,
+            //   },
               "& ::-webkit-scrollbar": {
                 width: "12px",
               },
