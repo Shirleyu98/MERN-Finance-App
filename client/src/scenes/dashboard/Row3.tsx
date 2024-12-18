@@ -1,5 +1,5 @@
 import DashboardBox from "@/components/DashboardBox";
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import { DataGrid, GridCellParams } from "@mui/x-data-grid";
 import {
   useGetTransactionsQuery,

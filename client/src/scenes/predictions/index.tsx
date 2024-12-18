@@ -2,7 +2,7 @@ import DashboardBox from "@/components/DashboardBox";
 import FlexBetween from "@/components/FlexBetween";
 import { useGetKpisQuery } from "@/state/api";
 import { Box, Button, Typography, useTheme } from "@mui/material";
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import regression, { DataPoint } from "regression";
 import {
   ResponsiveContainer,
@@ -15,9 +15,8 @@ import {
   Legend,
   Label,
 } from "recharts";
-type Props = {};
 
-const Predictions = (props: Props) => {
+const Predictions = () => {
   const { palette } = useTheme();
   const [isPredictions, setIsPredictions] = useState(false);
   const { data: kpiData } = useGetKpisQuery();
